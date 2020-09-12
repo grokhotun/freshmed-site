@@ -1,0 +1,244 @@
+.header {
+    &__top {
+        padding: 17px 0;
+        background-color: #fff;
+    }
+
+    &__bot {
+        padding: 15px 0;
+        background-color: #414042;
+    }
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    @media (max-width: $maxwidth4) {
+        flex-direction: column;
+    }
+    &__logo {
+    }
+
+    &__logo-img {
+        width: 176px;
+        height: 104px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__col {
+        &--first {
+            flex: 1;
+        }
+        &--second {
+            display: flex;
+            align-items: center;
+        }
+        @media (min-width: $maxwidth3) {
+            & > * {
+                &:not(:last-child) {
+                    margin: 0px 37px 0px 0px;
+                }
+            }
+        }
+        @media (max-width: $maxwidth3) {
+            flex-direction: column;
+        }
+    }
+
+    &__contact-info {
+        display: flex;
+        align-items: flex-start;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 35px 0px 0px;
+                @media (max-width: $maxwidth1) {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+        }
+    }
+
+    &__button {
+    }
+}
+
+.contact-info-header {
+    @media (max-width: $maxwidth3) {
+        margin: 0px 0px 10px 0px;
+    }
+    &__col {
+        @media (max-width: $maxwidth2) {
+            display: flex;
+            & > * {
+                &:not(:last-child) {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+            .text-with-icon {
+                .icon {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+            .text-with-icon__text {
+                display: none;
+            }
+        }
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+    }
+}
+
+.bot-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &__menu {
+        margin: 0px 125px 0px 0px;
+        @media (max-width: $maxwidth2) {
+            margin: 0px 50px 0px 0px;
+        }
+    }
+
+    &__login {
+        margin: 0px 40px 0px 0px;
+        @media (max-width: $maxwidth2) {
+            margin: 0px 20px 0px 0px;
+        }
+    }
+
+    &__language-selector {
+        min-width: 63px;
+    }
+}
+
+.menu-bot-header {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 47px 0px 0px;
+                @media (max-width: $maxwidth2) {
+                    margin: 0px 20px 0px 0px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+    }
+    
+    &__link {
+        font-weight: bold;
+        font-size: 16px;
+        color: #ffffff;
+        &.hover {
+            transition: 0.2s ease;
+            &:hover {
+                color: #87ad3b;
+            }
+        }
+        &.is-current {
+            &:after{
+                content:'';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: #e89a04;
+            }
+        }
+        &--arrow {
+            &:after {
+                content: '';
+                transition: 0.2s ease;
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin: 0px 0px 0px 7px;
+                background: url("../img/svg/sprite.svg#arrow") no-repeat;
+            }
+            &.is-active {
+                &:after{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__close {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: url('../img/svg/sprite.svg#close') no-repeat;
+        @media (min-width:$maxwidth3){
+            display: none;
+        }
+    }
+}
+
+.login-bot-header {
+    display: flex;
+    align-items: center;
+    @media (max-width: $maxwidth3) {
+        .m-icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    & > * {
+        &:not(:last-child) {
+            margin: 0px 7px 0px 0px;
+        }
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 16px;
+        color: #ffffff;
+        @media (max-width: $maxwidth3) {
+            display: none;
+        }
+    }
+}
+
+.dropdown-menu {
+    display: none;
+    z-index: 3;
+    background-color: #414042;
+    border-radius: 4px;
+    padding: 23px 15px 0 15px;
+    &.is-opened {
+        display: block;
+    }
+    & > * {
+        &:not(:last-child) {
+            margin: 0px 0px 25px 0px;
+        }
+    }
+    @media (min-width: $maxwidth3) {
+        padding: 30px 15px;
+        position: absolute;
+        top: 45px;
+        left: 0;
+    }
+    &__item {
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+}

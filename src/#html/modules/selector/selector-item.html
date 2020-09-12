@@ -1,0 +1,11 @@
+<div class="selector">
+    <input type="text" class="selector__input">
+    <button class="selector__current">
+        <span>@@title</span>
+    </button>
+    <div class="selector__options">
+        @@for (var i = 0; i < options.length; i++) {
+            <button data-value="`+options[i]+`" class="selector__option">`+options[i]+`</button>
+        }
+    </div>
+</div>

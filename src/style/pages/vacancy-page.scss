@@ -1,0 +1,54 @@
+.vacancy-page {
+
+    // .history-page__header
+    &__header {
+        margin: 0px 0px 95px 0px;
+        @media (max-width:$maxwidth3){
+            margin: 0px 0px 40px 0px;
+        }
+    }
+
+    // .history-page__body
+    &__body {
+        margin: 0px 0px 90px 0px;
+        .template-text {
+            color: #414042;
+        }
+        & > p {
+            margin: 0px 0px 45px 0px;
+        }
+    }
+
+    // .history-page__footer
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.body-vacancy-page {
+
+    // .body-vacancy-page__header
+    &__header {
+        margin: 0px 0px 88px 0px;
+    }
+
+    // .body-vacancy-page__title
+    &__title {
+        display: block;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #414042;
+        margin: 0px 0px 22px 0px;
+    }
+
+    // .body-vacancy-page__vacancies
+    &__vacancies {
+        & > * {
+          &:not(:last-child) { margin: 0px 0px 60px 0px; }
+        }
+    }
+}

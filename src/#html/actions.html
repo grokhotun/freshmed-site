@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Акції",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Акції']
+            })
+            <div class="s-actions-page">
+                <div class="container">
+                    <div class="actions-page">
+                        <div class="actions-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Акції",
+                                "default": true
+                            })
+                        </div>
+                        <div class="actions-page__body">
+                            @@include('./modules/actions-card/actions-card.html', {
+                                "photo":"1.png",
+                                "title":"Час не відкладати свій візит до гінеколога!",
+                                "text":"У медичному центрі FreshMed діє вигідна пропозиція на перший прийом у гінеколога. Разом із консультацією ви маєте змогу зробити обстеження мазку та відеокальпоскопію в подарунок. Загальна вартість такого візиту буде становити 500 грн.",
+                                "date":"Акція діє з 1.05.2020 до 01.09.2020 року."
+                            })
+                            @@include('./modules/actions-card/actions-card.html', {
+                                "photo":"2.png",
+                                "title":"Перший прийом зі знижкою!",
+                                "text":"Медичний центр FreshMed вже відкрив свої двері для пацієнтів. З нагоди нашого відкриття даруємо знижку на перший прийом. Лище до 31 травня кожен пацієнт отримує знижку 15% на перший прийом у буль якого лікаря медичного центру. Щоб потрапити на прийом, ви можете записатися до лікаря <a href='#'>онлайн</a> або замовити <a href=''>callback</a> і ми перетелефонуємо вам через 30 секунд.",
+                                "date":"Акція діє з 15.05.2020 до 31.05.2020 року."
+                            })
+                            @@include('./modules/actions-card/actions-card.html', {
+                                "photo":"3.png",
+                                "title":"Пакет “Оздоровлення”",
+                                "text":"Саме зараз у медичному центрі “FreshMed” ви маєте змогу придбати 10 сеансів масажів тіла за ціною 8. Також, ви отримуєте кожен п’ятий сеанс масажу у подарунок. Записуйтесь <a href=''>онлайн</a> або замовляйте <a href=''>callback</a> і ми перетелефонуємо вам через 30 секунд.",
+                                "date":"Акція діє з 1.05.2020 до 31.10.2020 року."
+                            })
+                            @@include('./modules/actions-card/actions-card.html', {
+                                "photo":"4.png",
+                                "title":"Перевір серце!",
+                                "text":"Дуже важливо перевіряти своє серце вчасно. В медичному центрі FreshMed вартість першого візиту до кардіолога становить 350 гривень. В цю вартість вже входить кардіограма та її розшифрування.  Записуйтесь онлайн або замовляйте call back і ми перетелефонуємо вам через 30 секунд.",
+                                "date":"Акція діє з 1.05.2020 до 01.09.2020 року. "
+                            })
+                        </div>
+                        <div class="actions-page__footer">
+                            @@include('./modules/pagination/pagination.html', {
+                                "pages":[1,2,3,4,5],
+                                "current": 0
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    <!-- @@include('./modules/popups/login.html') -->
+    <!-- @@include('./modules/popups/register.html') -->
+    <!-- @@include('./modules/popups/restore-password.html') -->
+    <!-- @@include('./modules/popups/thankyou.html') -->
+    @@include('./template/scripts.html')
+</body>
+</html>

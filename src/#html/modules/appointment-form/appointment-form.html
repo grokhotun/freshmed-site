@@ -1,0 +1,40 @@
+<div id="appointment" class="s-appointment">
+    <div class="s-appointment__bg ibg">
+        <img src="img/backgrounds/2.png" alt="Задний фон" />
+    </div>
+    <div class="container">
+        <div class="appointment">
+            <form action="" class="form">
+                <div class="appointment__form">
+                    <div class="appointment__header">
+                        <span class="appointment__title">Запис до лікаря онлайн</span>
+                        <span class="appointment__subtitle">Поля, відмічені зірочкою, обов’язкові для заповнення </span>
+                    </div>
+                    <div class="appointment__body">
+                        <div class="form-group">
+                            <span class="form-group__text">Введіть Ім’я та фамілію*</span>
+                            <input 
+                                required
+                                data-pristine-required-message="Введіть ваше ім'я"
+                                placeholder="Ірина Сергієнко" type="text" class="form-group__input">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-group__text">Введіть телефон*</span>
+                            <input
+                                required
+                                data-pristine-required-message="Введіть ваш телефон" 
+                                placeholder="+380 (67) 345-18-14" type="text" class="form-group__input js-mask-phone">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-group__text">Коментар</span>
+                            <textarea placeholder="Ваш комментар" name="" id="" cols="30" rows="10" class="form-group__textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="appointment__footer">
+                        <button class="appointment__button btn btn--primary">Записатися онлайн</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

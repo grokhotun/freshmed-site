@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Вакансії",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Про нас', 'Вакансії']
+            })
+            <div class="s-vacancy-page">
+                <div class="container">
+                    <div class="vacancy-page">
+                        <div class="vacancy-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Вакансії",
+                                "default": true
+                            })
+                        </div>
+                        <div class="vacancy-page__body body-vacancy-page">
+                            <div class="body-vacancy-page__header">
+                                <span class="body-vacancy-page__title">ПРОФЕСІЙНІ СПІВРОБІТНИКИ Є ЗАПОРУКОЮ НАШОГО УСПІХУ</span>
+                                <p class="template-text">
+                                    Якщо ви відповідаєте вимогам та прагнете стати частиною команди «FreshMed», надсилайте своє резюме на електронну пошту <a href="mailto:hr@freshmed.com.ua" class="template-text__link">hr@freshmed.com.ua</a>
+                                </p>
+                            </div>
+                            <div class="body-vacancy-page__vacancies">
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                                <div class="vacancy-card">
+                                    <a href="#" class="vacancy-card__title">Терапевт</a>
+                                    <p class="template-text">Вища медична освіта, спеціалізація «внутрішні хвороби», «загальна практика-сімейна медицина. Досвід роботи від 3 років, амбулаторний прийом...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vacancy-page__footer">
+                            @@include('./modules/pagination/pagination.html', {
+                                "pages":[1,2,3,4,5],
+                                "current": 0
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Прайс",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Прайс']
+            })
+            <div class="s-services s-services--page">
+                <div class="container">
+                    <div class="services">
+                        <div class="services__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Прайс медичного центру FreshMed",
+                                "default": true
+                            })
+                        </div>
+                        <div class="services__body">
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-1", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Гінекологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-2", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Дерматовенерологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-3", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Кардіологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-4", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Неврологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-5", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Ендокринологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-6", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Терапія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-7", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Ортопедія-Травматологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-8", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Гастроентерологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-9", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Фізіотерапія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-10", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Косметологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-11", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Психолог</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-12", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Дієтологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-13", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Аналізи</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-14", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">УЗІ</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-15", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Масаж</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-16", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Вакцинація</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    <!-- @@include('./modules/popups/login.html') -->
+    <!-- @@include('./modules/popups/register.html') -->
+    <!-- @@include('./modules/popups/restore-password.html') -->
+    <!-- @@include('./modules/popups/thankyou.html') -->
+    @@include('./template/scripts.html')
+</body>
+</html>

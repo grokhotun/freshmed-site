@@ -1,0 +1,187 @@
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-slider-arrow {
+    width: 50px;
+    height: 50px;
+    stroke: #EFAF22;
+}
+
+.icon-inst {
+    width: 50px;
+    height: 50px; 
+}
+
+.icon-fb {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-pagination-arrow {
+    width: 15px;
+    height: 15px;
+    stroke: #E89A04;
+}
+
+.icon-search {
+    width: 30px;
+    height: 30px;
+}
+
+.service-icon {
+    transition: .3s ease;
+    width: 120px;
+    height: 120px;
+    transition: .3s ease;
+    fill: #87AD3B;
+}
+
+.about-us-icon {
+    width: 71px;
+    height: 71px;    
+}
+
+.btn {
+    display: inline-block;
+    &--primary {
+        white-space: nowrap;
+        padding: 15px 30px;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        background: #87AD3B;
+        border-radius: 8px;
+        transition: .3s ease;
+        border: 2px solid #8DB145;
+        &:hover{
+            background-color: #fff;
+            color: #87AD3B;
+        }
+    }
+
+    &--empty-w {
+        font-weight: bold;
+        font-size: 18px;
+        color: #8DB145;
+        border-radius: 8px;
+        padding: 15px 30px;
+        border: 2px solid #8DB145;
+        transition: .3s ease;
+        &:hover{
+            background-color: #8DB145;
+            color: #ffffff;
+        }
+    }
+    &--empty-g {
+        font-weight: bold;
+        font-size: 18px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 8px;
+        padding: 15px 30px;
+        transition: .3s ease;
+        &:hover{
+            background-color: #ffffff;
+            color: #8DB145;
+        }
+    }
+}
+
+.form-group {
+    position: relative;
+    &.has-danger {
+        .form-group__input {
+            border: 2px solid red;
+        }
+    }
+    .text-help {
+        position: absolute;
+        bottom: -17px;
+        left: 20px;
+        color: red;
+    }
+    // .form-group__text
+    &__text {
+        display: block;
+        margin: 0px 0px 18px 0px;
+        font-size: 24px;
+        line-height: 30px;
+        color: #625C66;
+        @media (max-width:$maxwidth3){
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
+    // .form-group__input
+
+    &__input {
+        width: 100%;
+        background: #FDFFF8;
+        border: 2px solid #87AD3B;
+        border-radius: 8px;
+        padding: 18px 23px;
+        font-size: 23px;
+        line-height: 29px;
+        color: #414042;
+        @include placeholder {
+            font-size: 20px;
+            line-height: 25px;
+            color: #B2ABB8;
+        }
+    }
+
+    // .form-group__textarea
+
+    &__textarea {
+        resize: none;
+        width: 100%;
+        background-color: #FDFFF8;
+        border: 2px solid #87AD3B;
+        border-radius: 8px;
+        padding: 18px 23px;
+        font-size: 23px;
+        line-height: 29px;
+        color: #414042;
+        @include placeholder {
+            font-size: 20px;
+            line-height: 25px;
+            color: #B2ABB8;
+        }
+    }
+}
+
+.searchbar {
+    background: #FDFFF8;
+    border: 2px solid #87AD3B;
+    box-shadow: 0px 10px 20px rgba(135, 173, 59, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    &__icon {
+        margin: 0 25px;
+        @media (max-width:$maxwidth3){
+            margin: 0px 0px 0px 20px;
+        }
+    }
+    // .searchbar__input
+    &__input {
+        padding: 18px;
+        width: 100%;
+        height: 100%;
+        background: #FDFFF8;
+        font-size: 23px;
+        line-height: 29px;
+        color: #414042;
+        @include placeholder {
+            font-size: 20px;
+            line-height: 25px;
+            color: #B2ABB8;
+        }
+    }
+}

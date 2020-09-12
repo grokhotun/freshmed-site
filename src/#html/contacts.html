@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Контакти",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Контакти']
+            })
+            <div class="s-contacts-page">
+                <div class="container">
+                    <div class="contacts-page">
+                        <div class="contacts-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Контакти",
+                                "default": true
+                            })
+                        </div>
+                        <div class="contacts-page__body">
+                            <div class="contacts-page__info">
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col">
+                                        @@include('./mixins/icon.html', {"name":"phone"})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <a href="tel:+38 063 500 88 22" class="text-with-icon__text">+38 063 500 88 22</a>
+                                        <a href="tel:+38 095 500 88 22" class="text-with-icon__text">+38 095 500 88 22</a>
+                                        <a href="tel:+38 097 500 88 22" class="text-with-icon__text">+38 097 500 88 22</a>
+                                    </div>
+                                </div>
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col">
+                                        @@include('./mixins/icon.html', {"name":"clock"})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <span class="text-with-icon__text">пн-пт 8.00 - 19.00</span>
+                                        <span class="text-with-icon__text">сб 9.00 - 17.00</span>
+                                    </div>
+                                </div>
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col">
+                                        @@include('./mixins/icon.html', {"name":"mail"})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <a href="mailto:info@freshmed.com.ua" class="text-with-icon__text">info@freshmed.com.ua</a>
+                                    </div>
+                                </div>
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col text-with-icon__col--icon">
+                                        @@include('./mixins/icon.html', {"name":"point"})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <span class="text-with-icon__text">м. Запоріжжя, пр-т Соборний, 94</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts-page__map map-contacts-page">
+                                <div class="map-contacts-page__wrapper">
+                                    <div id="yamap-contacts" class="map-contacts-page__map"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

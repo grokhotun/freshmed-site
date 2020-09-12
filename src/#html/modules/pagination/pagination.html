@@ -1,0 +1,20 @@
+<div class="pagination">
+    <a href="#" class="pagination__arrow pagination__arrow--prev is-disabled">
+        @@include('./mixins/svg-icon.html', {"name":"pagination-arrow", "mod":""})
+        <span>Попередня</span>
+    </a>
+    <ul class="pagination__list js-pagination">
+        @@for (var i = 0; i < pages.length; i++) {
+            @@if(context.current === `+i+`) {
+                <li class="pagination__item"><a href="" class="pagination__link is-active">`+pages[i]+`</a></li>
+            }
+            @@if(!(context.current === `+i+`)) {
+                <li class="pagination__item"><a href="" class="pagination__link">`+pages[i]+`</a></li>
+            }
+        }
+    </ul>
+    <a href="#" class="pagination__arrow pagination__arrow--next">
+        <span>Наступна</span>
+        @@include('./mixins/svg-icon.html', {"name":"pagination-arrow", "mod":""})
+    </a>
+</div>

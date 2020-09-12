@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Главная",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            <div class="s-services">
+                <div class="container">
+                    <div class="services">
+                        <div class="services__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Послуги",
+                                "title":"Послуги медичного центру FreshMed",
+                                "subtitle":"Ми раді надавати вам широкий перелік медичних послуг задля збереження вашого здоров’я."
+                            })
+                        </div>
+                        <div class="services__body">
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-1", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Гінекологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-2", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Дерматовенерологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/icon.html', {"name":"service-3", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Кардіологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-4", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Неврологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-5", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Ендокринологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-6", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Терапія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-7", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Ортопедія-Травматологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-8", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Гастроентерологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-9", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Фізіотерапія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-10", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Косметологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-11", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Психолог</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-12", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Дієтологія</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-13", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Аналізи</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-14", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">УЗІ</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-15", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Масаж</span>
+                            </a>
+                            <a href="#" class="service-card">
+                                <div class="service-card__icon">
+                                    @@include('./mixins/svg-icon.html', {"name":"service-16", "mod":"service-icon"})
+                                </div>
+                                <span class="service-card__text">Вакцинація</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-actions">
+                <div class="container">
+                    <div class="actions">
+                        <div class="actions__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Акції",
+                                "title":"Акційні пропозиції та програми",
+                                "subtitle":"Скористайтесь акційними пропозиціями та єфективними комплексними програмами від нашого медичного центру"
+                            })
+                        </div>
+                        <div class="actions__body">
+                            <div class="actions-slider">
+                                <div class="actions-slider__container">
+                                    <div class="actions-slider__wrapper swiper-wrapper">
+                                        <div class="actions-slider__slide swiper-slide">
+                                            <div class="actions-slider__card">
+                                                <img src="img/actions/1.png" alt="Карточка акции" />
+                                            </div>
+                                            <a href="#" class="actions-slider__button btn btn--empty-w">Подробиці</a>
+                                        </div>
+                                        <div class="actions-slider__slide swiper-slide">
+                                            <div class="actions-slider__card">
+                                                <img src="img/actions/2.png" alt="Карточка акции" />
+                                            </div>
+                                            <a href="#" class="actions-slider__button btn btn--empty-g">Подробиці</a>
+                                        </div>
+                                        <div class="actions-slider__slide swiper-slide">
+                                            <div class="actions-slider__card">
+                                                <img src="img/actions/3.png" alt="Карточка акции" />
+                                            </div>
+                                            <a href="#" class="actions-slider__button btn btn--empty-w">Подробиці</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions-slider__pagination"></div>
+                                <span class="actions-slider__arrow actions-slider__arrow--prev"></span>
+                                <span class="actions-slider__arrow actions-slider__arrow--next"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-about-us">
+                <div class="s-about-us__bg ibg">
+                    <img src="img/backgrounds/1.png" alt="Фото стетоскопа" />
+                </div>
+                <div class="container">
+                    <div class="about-us">
+                        <div class="about-us__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "white":true,
+                                "mark":"Про нас",
+                                "title":"Створено для пацієнтів"
+                            })
+                        </div>
+                        <div class="about-us__body">
+                            <div class="about-us__item item-about-us">
+                                <div class="item-about-us__col">
+                                    <div class="item-about-us__icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"about-us-1", "mod":"about-us-icon"})
+                                    </div>
+                                </div>
+                                <div class="item-about-us__col">
+                                    <span class="item-about-us__text">Новітнє європейське обладнання</span>
+                                </div>
+                            </div>
+                            <div class="about-us__item item-about-us">
+                                <div class="item-about-us__col">
+                                    <div class="item-about-us__icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"about-us-2", "mod":"about-us-icon"})
+                                    </div>
+                                </div>
+                                <div class="item-about-us__col">
+                                    <span class="item-about-us__text">Зручне розташування в центрі міста, 20 метрів від зупинки транспорту</span>
+                                </div>
+                            </div>
+                            <div class="about-us__item item-about-us">
+                                <div class="item-about-us__col">
+                                    <div class="item-about-us__icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"about-us-3", "mod":"about-us-icon"})
+                                    </div>
+                                </div>
+                                <div class="item-about-us__col">
+                                    <span class="item-about-us__text">Ефективні та вигідні комплексні програми</span>
+                                </div>
+                            </div>
+                            <div class="about-us__item item-about-us">
+                                <div class="item-about-us__col">
+                                    <div class="item-about-us__icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"about-us-4", "mod":"about-us-icon"})
+                                    </div>
+                                </div>
+                                <div class="item-about-us__col">
+                                    <span class="item-about-us__text">Комфортне приміщення</span>
+                                </div>
+                            </div>
+                            <div class="about-us__item item-about-us">
+                                <div class="item-about-us__col">
+                                    <div class="item-about-us__icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"about-us-5", "mod":"about-us-icon"})
+                                    </div>
+                                </div>
+                                <div class="item-about-us__col">
+                                    <span class="item-about-us__text">Лікування без зайвих призначень</span>
+                                </div>
+                            </div>
+                            <div class="about-us__item item-about-us">
+                                <div class="item-about-us__col">
+                                    <div class="item-about-us__icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"about-us-6", "mod":"about-us-icon"})
+                                    </div>
+                                </div>
+                                <div class="item-about-us__col">
+                                    <span class="item-about-us__text">Електронна картка доступна в  особистому кабінеті онлайн</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-doctors">
+                <div class="container">
+                    <div class="doctors">
+                        <div class="doctors__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Лікарі",
+                                "title":"Команда професіоналів",
+                                "subtitle":"Лікарі нашого медичного центру є досвідченими професіоналами. Вони завжді готові вислухати та допомогти кожному пацієнту."
+                            })
+                        </div>
+                        <div class="doctors__body">
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"6.jpg",
+                                "name":"Душейко Володимир  Петрович",
+                                "profession":"гінеколог, лікар вищої категорії",
+                                "experience":"стаж-роботи: 33 роки"
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"2.jpg",
+                                "name":"Александрова Ксенія Олександрівна",
+                                "profession":"ендокринолог",
+                                "experience":"стаж роботи: 26 років"
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"1.jpg",
+                                "name":"Акімов Олександр Олександрович",
+                                "profession":"кардіолог лікар вищої категорії",
+                                "experience":"стаж-роботи: 28 років"
+                            })
+                        </div>
+                        <div class="doctors__footer">
+                            <a href="doctors.html" class="doctors__button btn btn--primary">Команда лікарів</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+            <div class="s-video-tour">
+                <div class="container">
+                    <div class="video-tour">
+                        <div class="video-tour__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Про нас",
+                                "title":"Відео тур медичним центром",
+                                "subtitle":"Сучачний, затишний медичний центр в центрі  міста Запоріжжя. Вам у нас сподобається!"
+                            })
+                        </div>
+                        <div class="video-tour__body">
+                            <div class="video-tour__preview">
+                                <img src="img/video.jpg" alt="Превью видео" />
+                                @@include('./mixins/svg-icon.html', {"name":"play", "mod":""})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

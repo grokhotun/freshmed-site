@@ -1,0 +1,202 @@
+//Миксины
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+	font-size: 15px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.ibg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 970px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 750px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+//==================================================================================================//
+//             ПОДКЛЮЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ФАЙЛОВ СТИЛЕЙ                                             //
+//==================================================================================================//
+
+@import "fonts";
+@import "null.scss";
+@import "ui.scss";
+@import "small-blocks.scss";
+
+.s {
+	&-breadcrumbs {
+		@media (max-width: $maxwidth3) {
+			display: none;
+		}
+	}
+	&-header {
+	}
+	&-banner-slider {
+	}
+
+	&-services {
+		padding: 105px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+		&--page {
+			padding: 47px 0 160px 0;
+			.services__header {
+				align-items: flex-start;
+			}
+		}
+	}
+	&-actions {
+		padding: 105px 0 160px 0;
+		background-color: #f7faf2;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-about-us {
+		position: relative;
+		padding: 105px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+		&__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: linear-gradient(0deg, rgba(135, 173, 59, 0.95), rgba(135, 173, 59, 0.95));
+			}
+		}
+	}
+	&-doctors {
+		padding: 105px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-appointment {
+		padding: 113px 0 160px 0;
+		background-color: #f7faf2;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+		position: relative;
+		&__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	&-video-tour {
+		padding: 105px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-footer {
+		background-color: #414042;
+		padding: 91px 0 153px 0;
+	}
+	&-service-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+		.services__header {
+			align-items: flex-start;
+		}
+	}
+	&-history-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-vacancy-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-actions-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+
+	&-doctors-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-contacts-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+	&-price-page {
+		padding: 47px 0 160px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 75px 0;
+		}
+	}
+}
+
+//Подключение стилей всех страниц
+@import "../pages/index.scss";
+@import "../pages/service-page.scss";
+@import "../pages/history-page.scss";
+@import "../pages/vacancy-page.scss";
+@import "../pages/actions-page.scss";
+@import "../pages/price-page.scss";
+@import "../pages/doctors-page.scss";
+@import "../pages/contacts-page.scss";
+
+//Подключение модулей
+@import "../modules/modules.scss";

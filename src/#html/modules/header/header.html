@@ -1,0 +1,103 @@
+<div class="s-header">
+    <div class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="top-header">
+                    <div class="top-header__col top-header__col--first">
+                        <a href="links.html" class="top-header__logo">
+                            <div class="top-header__logo-img">
+                                <img src="img/logo.png" alt="Лого" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-header__col top-header__col--second">
+                        <div class="top-header__contact-info contact-info-header">
+                            <div class="contact-info-header__col">
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col text-with-icon__col--icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"point", "mod":""})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <span class="text-with-icon__text">м. Запоріжжя, пр-т Соборний, 94</span>
+                                    </div>
+                                </div>
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col text-with-icon__col--icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"mail", "mod":""})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <a href="mailto:info@freshmed.com.ua" class="text-with-icon__text">info@freshmed.com.ua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-info-header__col">
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col">
+                                        @@include('./mixins/svg-icon.html', {"name":"clock", "mod":""})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <span class="text-with-icon__text">пн-пт 8.00 - 19.00</span>
+                                        <span class="text-with-icon__text">сб 9.00 - 17.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-info-header__col">
+                                <div class="text-with-icon">
+                                    <div class="text-with-icon__col">
+                                        @@include('./mixins/svg-icon.html', {"name":"phone", "mod":""})
+                                    </div>
+                                    <div class="text-with-icon__col">
+                                        <a href="tel:+38 063 500 88 22" class="text-with-icon__text">+38 063 500 88 22 </a>
+                                        <a href="tel:+38 095 500 88 22" class="text-with-icon__text">+38 095 500 88 22</a>
+                                        <a href="tel:+38 097 500 88 22" class="text-with-icon__text">+38 097 500 88 22</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#appointment" class="top-header__button btn btn--primary js-smoothscroll-btn">Запис онлайн</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bot">
+            <div class="container">
+                <div class="bot-header">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <div class="bot-header__menu menu-bot-header">
+                        <span class="menu-bot-header__close js-burger-close"></span>
+                        <ul class="menu-bot-header__list">
+                            <li class="menu-bot-header__item">
+                                <a href="" class="menu-bot-header__link menu-bot-header__link--arrow  js-dropdown-menu-btn">Про нас</a>
+                                <ul class="dropdown-menu js-dropdown-menu">
+                                    <li class="dropdown-menu__item">
+                                        <a href="#" class="dropdown-menu__link">Історія</a>
+                                    </li>
+                                    <li class="dropdown-menu__item">
+                                        <a href="#" class="dropdown-menu__link">Вакансії</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link is-current">Послуги</a></li>
+                            <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Прайс</a></li>
+                            <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Лікарі</a></li>
+                            <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Акції</a></li>
+                            <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bot-header__login login-bot-header">
+                        @@include('./mixins/svg-icon.html', {"name":"human", "mod":""})
+                        <span class="login-bot-header__text">Особистий кабінет</span>
+                    </a>
+                    <div class="bot-header__language-selector">
+                        @@include('./modules/selector/selector-item.html', {
+                            "title":"UA",
+                            "options":['UA','EN','RU']
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

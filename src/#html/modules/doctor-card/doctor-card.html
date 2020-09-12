@@ -1,0 +1,13 @@
+<div class="doctor-card">
+    <div class="doctor-card__photo">
+        <img src="img/doctors/@@photo" alt="Фото доктора" />
+    </div>
+    <span class="doctor-card__name">@@name</span>
+    <span class="doctor-card__profession">@@profession</span>
+    <span class="doctor-card__experience">@@experience</span>
+    @@if(context.button){
+        <div class="doctor-card__footer">
+            <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+        </div>
+    }
+</div>

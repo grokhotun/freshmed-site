@@ -1,0 +1,24 @@
+.breadcrumbs {
+    padding: 91px 0px 0px 0px;
+    li + li:before {
+        color: black;
+        padding: 0 5px;
+        content: "/\0a0";
+    }
+    // .breadcrumbs__item
+    &__item {
+        display: inline-block;  
+        font-size: 18px;
+        line-height: 23px;
+        color: #E89A04;  
+    }
+
+    // .breadcrumbs__link
+
+    &__link {
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000; 
+    }
+}
+

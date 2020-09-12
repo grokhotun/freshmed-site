@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Історія",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Про нас', 'Історія']
+            })
+            <div class="s-history-page">
+                <div class="container">
+                    <div class="history-page">
+                        <div class="history-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Історія",
+                                "default": true
+                            })
+                        </div>
+                        <div class="history-page__body">
+                            <p class="template-text">Багатопрофільний лікувальний центр «FRESHMED» — це сучасна приватна медицина, якісні послуги та професійні лікарі.</p>
+                            <p class="template-text">«FRESHMED» пропонує:</p>
+                            <ul class="template-list">
+                                <li class="template-list__item">13 напрямів лікування: терапія, гінекологія, кардіологія, ортопедія-травматологія, неврологія, ендокринологія, дієтологія, дерматовенерологія, фізіотерапія (включаючи масаж), неврологія, психологія, гастроентерологія, УЗД, великий набір аналізівта косметологічні процедури;</li>
+                                <li class="template-list__item">понад 20 лікарів — досвідчених фахівців: кожен другий має досвід 15 років, кожен третій — 20 років, більшість – лікарі вищої категорії; </li>
+                                <li class="template-list__item">близько 300 різноманітних медичних послуг;</li>
+                                <li class="template-list__item">потужна фізіотерапевтична база — 15 новітніх апаратів та 18 прогресивних методів лікування;</li>
+                                <li class="template-list__item">досконале знання протоколів діагностики та лікування;</li>
+                                <li class="template-list__item">велика впевненість у власних силах та любов до справи, яку ми робимо.</li>
+                            </ul>
+                            <p class="template-text">Ми створювали «FRESHMED» з однією метою: дати можливість з будь-якою проблемою звернутися до лікаря з великим досвідом та в короткий термін отримати результат. Без зволікань, без напруження, без незрозумілих процедур. У нас немає черг та комфортне розташування у центрі міста. </p>
+                            <p class="template-text">Просто. Зрозуміло. Оперативно. Професійно. Зважене, доступне та ефективне медичне рішення, яке допоможе саме Вам. Хочемо, щоб всі наші пацієнти врешті переконалися на власному досвіді, що приватна медицина 21 сторіччя вже тут, поруч, вона якісна та доступна.</p>
+                            <p class="template-text">Гарантуємо повагу, професіоналізм, відсутність надмірного лікування, уважне ставлення та детальний аналіз здоров'я пацієнта.</p>
+                            <p class="template-text">Отже, чекаємо на Вас у середмісті для знайомства. «FRESHMED» — свіжі рішення для Вашого здоров’я.</p>
+                            <p class="template-text">Багатопрофільний лікувальний центр «FRESHMED» працює для вас із травня 2020 року.</p>
+                        </div>
+                        <div class="history-page__footer">
+                            <div class="history-page__collage collage-history-page">
+                                <div class="collage-history-page__col">
+                                    <div class="collage-history-page__row">
+                                        <img src="img/clinic/1.jpg" alt="Фото клиники" />
+                                    </div>
+                                    <div class="collage-history-page__row">
+                                        <img src="img/clinic/2.jpg" alt="Фото клиники" />
+                                    </div>
+                                </div>
+                                <div class="collage-history-page__col">
+                                    <div class="collage-history-page__row">
+                                        <img src="img/clinic/3.jpg" alt="Фото клиники" />
+                                    </div>
+                                </div>
+                                <div class="collage-history-page__col">
+                                    <div class="collage-history-page__row">
+                                        <img src="img/clinic/4.jpg" alt="Фото клиники" />
+                                    </div>
+                                    <div class="collage-history-page__row">
+                                        <img src="img/clinic/5.jpg" alt="Фото клиники" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

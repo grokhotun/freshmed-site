@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Кардіологія",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Прайс', 'Аналізи']
+            })
+            <div class="s-price-page">
+                <div class="container">
+                    <div class="price-page">
+                        <div class="price-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Прайс: аналізи",
+                                "default": true
+                            })
+                        </div>
+                        <div class="price-page__body">
+                            <div class="price-page__searchbar">
+                                @@include('./modules/searchbar/searchbar.html')
+                            </div>
+                            <div class="price-page__table">
+                                <table class="template-table">
+                                    <tr class="template-table__row template-table__row--header">
+                                        <th class="template-table__cell">Код </th>
+                                        <th class="template-table__cell">Найменування</th>
+                                        <th class="template-table__cell">Вартість, грн</th>
+                                        <th class="template-table__cell">Строк, дні</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">1</th>
+                                        <th data-label="Найменування" class="template-table__cell">АЛТ (аланинаминотроансферраза)</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">38</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">3</th>
+                                        <th data-label="Найменування" class="template-table__cell">Альбумін</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">28</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">4</th>
+                                        <th data-label="Найменування" class="template-table__cell">Альфа-амілаза</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">48</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">5</th>
+                                        <th data-label="Найменування" class="template-table__cell">Амілаза панкреатична</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">65</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">6</th>
+                                        <th data-label="Найменування" class="template-table__cell">Білірубін загальний / білірубін прямий</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">55</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">7</th>
+                                        <th data-label="Найменування" class="template-table__cell">Тимолова проба</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">33</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">8</th>
+                                        <th data-label="Найменування" class="template-table__cell">Гамма-ГТ</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">48</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">9</th>
+                                        <th data-label="Найменування" class="template-table__cell">Глюкоза</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">35</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">11</th>
+                                        <th data-label="Найменування" class="template-table__cell">HbA1с (Глікозильований гемоглобін)</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">140</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">12</th>
+                                        <th data-label="Найменування" class="template-table__cell">КФК (креатинфосфокінази)</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">53</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">13</th>
+                                        <th data-label="Найменування" class="template-table__cell">КФК МВ (Креатинкіназа-МВ)</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">63</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">1</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th colspan="4" class="templat -table__cell template-table__cell--subheader">ПРОТОЧНА ЦИТОМЕТРІЯ</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">201</th>
+                                        <th data-label="Найменування" class="template-table__cell">"Імунофенотипування лімфоцитів крові (CD45/CD14; CD3/CD19; CD3/CD4; CD3/CD8; CD3/CD16+CD56)"</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">500</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">3-6 днів</th>
+                                    </tr>
+                                    <tr class="template-table__row">
+                                        <th data-label="Код" class="template-table__cell">207</th>
+                                        <th data-label="Найменування" class="template-table__cell">Діагностика серонегативних спондилоартропатій(HLA-B27/HLA-B7)</th>
+                                        <th data-label="Вартість, грн" class="template-table__cell">450</th>
+                                        <th data-label="Строк, дні" class="template-table__cell">3-6 днів</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

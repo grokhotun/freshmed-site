@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Кардіологія",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Послуги', 'Кардіологія']
+            })
+            <div class="s-service-page">
+                <div class="container">
+                    <div class="service-page">
+                        <div class="service-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Кардіологія",
+                                "default": true
+                            })
+                        </div>
+                        <div class="service-page__body">
+                            <p class="template-text">Серце людини – це центральний насос серцево-судинної системи, який б’ється декілька мільярдів разів протягом нашого життя.</p>
+                            <p class="template-text">Напружений ритм життя, стреси, погані звички, малорухомий спосіб життя – це фактори, які провокують розвиток серцево-судинних захворювань (ССЗ). Також серед факторів ризику: спадковість, ожиріння, підвищений тиск. </p>
+                            <p class="template-text">За даними Всесвітньої організації захисту здоров’я, щорічно у світі стається 17,5 млн. смертей через кардіологічні захворювання. Їх ще іноді називають «чумою 21 століття». Найефективніший спосіб боротьби із захворюваннями – це своєчасна діагностика і профілактика. Саме вони дозволяють різко знизити ризик розвитку ССЗ, попередити 80% передчасних інфарктів та збільшити тривалість життя людини на 10-15 років.</p>
+                            <p class="template-text">Будьте уважні до свого самопочуття! Якщо у вас з’явилися наступні симптоми, потрібно відвідати лікаря-кардіолога:</p>
+                            <ul class="template-list">
+                                <li class="template-list__item">біль у грудній клітині;</li>
+                                <li class="template-list__item">нестабільність артеріального тиску;</li>
+                                <li class="template-list__item">поява задишки (у спокійному стані чи після незначного фізичного навантаження);</li>
+                                <li class="template-list__item">біль у ділянці серця;</li>
+                                <li class="template-list__item">запаморочення;</li>
+                                <li class="template-list__item">погіршення стану за наявності захворювань серцево-судинної системи;</li>
+                                <li class="template-list__item">прискорене серцебиття або занадто рідкий пульс.</li>
+                            </ul>
+                            <p class="template-text">Не зволікайте, звертайтесь до лікарів-кардіологів медичного центру «FRESHMED»  фахівців з багаторічним досвідом, які мають вищу кваліфікацію. На базі медичного центру проводиться:
+                            </p>
+                            <ul class="template-list">
+                                <li class="template-list__item template-list__item--green">раннє виявлення ССЗ;</li>
+                                <li class="template-list__item template-list__item--green">лікування та обов'язкове медичне спостереження за пацієнтами, у яких вже є ССЗ;</li>
+                                <li class="template-list__item template-list__item--green">виявлення та діагностика супутніх захвор вань</li>
+                            </ul>
+                            <p class="template-text">
+                                У нашому медичному центрі доступна точна діагностика:
+                            </p>
+                            <ul class="template-list">
+                                <li class="template-list__item">електрокардіографія – найлегший спосіб оцінки стану здоров’я Вашого серця;</li>
+                                <li class="template-list__item">УЗД серця чи ехокардіографія – ультразвукове дослідження морфологічних та функціональних змін серця та клапанного апарату;</li>
+                                <li class="template-list__item">добове моніторування ЕКГ (холтерівське);</li>
+                                <li class="template-list__item">УЗ-діагностика судинних захворювань (дуплексне сканування);</li>
+                                <li class="template-list__item">біоімпедансна діагностика для оцінки метаболічного віку та співвідношення жирової, кісткової, м’язової тканин та води;</li>
+                                <li class="template-list__item">лабораторна діагностика (кардіомаркери, ліпіди, показники коагуляції тощо).</li>
+                            </ul>
+                            <p class="template-text">
+                                Нашими лікарями застосовуються:
+                            </p>
+                            <ul class="template-list">
+                                <li class="template-list__item">перевірені методи та лікарські препарати;</li>
+                                <li class="template-list__item">широкий спектр фізіотерапевтичних процедур (електро-магніто-лазеротерапія, ударно-хвильова терапія, пресотерапія).</li>
+                            </ul>
+                            <p class="template-text">Все просто, доступно та зрозуміло.</p>
+                            <p class="template-text">Хвороби серця потребують регулярного та всебічного контролю, тому не відкладайте візит до лікаря. Кардіолог не лише призначить необхідні препарати, але і дасть корисні рекомендації щодо способу життя.</p>
+                            <p class="template-text template-text--title">Цікавинка зі сфери кардіології. Чи знали ви?</p>
+                            <p class="template-text">Розбите серце – це не лише метафора. Існує синдром розбитого серця, який може мати симптоми, подібні до серцевого нападу. Різниця полягає в тому, що серцевий напад викликаний серцевими захворюваннями, а синдром розбитого серця – припливом гормонів стресу від емоційно або фізіологічно стресової події. Смерть від цього синдрому можлива, але вкрай рідка. Бажаємо Вам, щоб ваші серця ніколи не були розбитими ні в прямому, ні в переносному сенсі слова, а про інше подбає «FRESHMED». Довірте своє серце нам!</p>
+                        </div>
+                        <div class="service-page__footer">
+                            <table class="template-table">
+                                <tr class="template-table__row template-table__row--header">
+                                    <th class="template-table__cell">№</th>
+                                    <th class="template-table__cell">Найменування</th>
+                                    <th class="template-table__cell">Вартість, грн</th>
+                                </tr>
+                                <tr class="template-table__row">
+                                    <th data-label="№" class="template-table__cell">1</th>
+                                    <th data-label="Найменування" class="template-table__cell">Перша консультація</th>
+                                    <th data-label="Вартість, грн" class="template-table__cell">250</th>
+                                </tr>
+                                <tr class="template-table__row">
+                                    <th data-label="№" class="template-table__cell">2</th>
+                                    <th data-label="Найменування" class="template-table__cell">Повторна консультація</th>
+                                    <th data-label="Вартість, грн" class="template-table__cell">200</th>
+                                </tr>
+                                <tr class="template-table__row">
+                                    <th data-label="№" class="template-table__cell">3</th>
+                                    <th data-label="Найменування" class="template-table__cell">Консультація з розшифруванням кардіограми</th>
+                                    <th data-label="Вартість, грн" class="template-table__cell">350</th>
+                                </tr>
+                                <tr class="template-table__row">
+                                    <th data-label="№" class="template-table__cell">4</th>
+                                    <th data-label="Найменування" class="template-table__cell">Добовий моніторинг АД</th>
+                                    <th data-label="Вартість, грн" class="template-table__cell">200</th>
+                                </tr>
+                            </table>
+                            <a href="#" class="service-page__link">Дивитися весь прайс-лист</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./modules/appointment-form/appointment-form.html')
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

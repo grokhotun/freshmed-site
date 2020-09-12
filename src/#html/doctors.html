@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Лікарі",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner-slider/banner-slider.html')
+            @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                "links":['Головна','Лікарі']
+            })
+            <div class="s-doctors-page">
+                <div class="container">
+                    <div class="doctors-page">
+                        <div class="doctors-page__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Лікарі",
+                                "default": true
+                            })
+                        </div>
+                        <div class="doctors-page__body">
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"6.jpg",
+                                "name":"Душейко Володимир  Петрович",
+                                "profession":"гінеколог, лікар вищої категорії",
+                                "experience":"стаж-роботи: 33 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"2.jpg",
+                                "name":"Александрова Ксенія Олександрівна",
+                                "profession":"ендокринолог",
+                                "experience":"стаж роботи: 26 років",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"1.jpg",
+                                "name":"Акімов Олександр Олександрович",
+                                "profession":"кардіолог лікар вищої категорії",
+                                "experience":"стаж-роботи: 28 років",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"13.jpg",
+                                "name":"Сеньків Людмила Миколаївна",
+                                "profession":"невролог, лікар вищої категорії",
+                                "experience":"стаж роботи: 12 років",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"10.jpg",
+                                "name":"Печерський Олег Іванович",
+                                "profession":"ортопед-травматолог, лікар 1 категорії",
+                                "experience":"стаж роботи: 22 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"12.jpg",
+                                "name":"Рижова Наталія Олександрівна",
+                                "profession":"невролог лікар вищої категорї",
+                                "experience":"стаж роботи: 40 років",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"4.jpg",
+                                "name":"Буц Оксана Георгієвна",
+                                "profession":"фізіотерапевт, невролог лікар вищої категорії",
+                                "experience":"стаж роботи: 10 років",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"15.jpg",
+                                "name":"Фокіна Діана Олегівна",
+                                "profession":"дерматолог-косметолог",
+                                "experience":"стаж роботи: 2 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"7.jpg",
+                                "name":"Єлісєєва Олена Борисівна",
+                                "profession":"фізіотерапевт, невролог лікар вищої категорії",
+                                "experience":"стаж роботи: 23 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"14.jpg",
+                                "name":"Федорова Олена Петрівна",
+                                "profession":"терапевт, кандидат мед. наук, лікар вищої категорії",
+                                "experience":"стаж роботи: 24 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"11.jpg",
+                                "name":"Поліщук Ольга Юріївна",
+                                "profession":"гінеколог, лікар вищої категорії",
+                                "experience":"стаж роботи: 26 років",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"18.jpg",
+                                "name":"Шейченко Тетяна Володимирівна",
+                                "profession":"кардіолог, лікар вищої категорії",
+                                "experience":"стаж роботи: 23 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"5.jpg",
+                                "name":"Герасютенко Тамара Дмитрівна",
+                                "profession":"лікар УЗІ, лікар вищої категорії",
+                                "experience":"стаж роботи: 47  роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"16.jpg",
+                                "name":"Цис Олексій Вікторович",
+                                "profession":"гастроентеролог, дієтолог",
+                                "experience":"стаж роботи: 4 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"9.jpg",
+                                "name":"Мухо Ліана Михайлівна",
+                                "profession":"лікар УЗІ, лікар 1 категорії",
+                                "experience":"стаж роботи: 9 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"17.jpg",
+                                "name":"Черниш Олег Сергійович",
+                                "profession":"косметолог",
+                                "experience":"стаж роботи: 1,5 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"8.jpg",
+                                "name":"Мочалова Вікторія Юріївна",
+                                "profession":"психолог, лікар 2 категорії",
+                                "experience":"стаж роботи: 24 роки",
+                                "button":true
+                            })
+                            @@include('./modules/doctor-card/doctor-card.html', {
+                                "photo":"3.jpg",
+                                "name":"Бєлих Сергій Олександрович",
+                                "profession":"кваліфікований масажист",
+                                "experience":"стаж роботи: 7 років",
+                                "button":true
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>
