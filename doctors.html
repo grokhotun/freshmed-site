@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="Описание">
+    <!-- Включить если нужна поддержка ie11 -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7289e9da-b810-4e99-973b-adc7197fefe4&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Лікарі</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__body">Прелоадер</div>
+    </div>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <div class="s-header">
+            <div class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="top-header">
+                            <div class="top-header__col top-header__col--first">
+                                <a href="links.html" class="top-header__logo">
+                                    <div class="top-header__logo-img">
+                                        <img src="img/logo.png" alt="Лого" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="top-header__col top-header__col--second">
+                                <div class="top-header__contact-info contact-info-header">
+                                    <div class="contact-info-header__col">
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col text-with-icon__col--icon">
+                                                <svg class="icon icon-point ">
+                                                    <use xlink:href="img/svg/sprite.svg#point"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <span class="text-with-icon__text">м. Запоріжжя, пр-т Соборний, 94</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col text-with-icon__col--icon">
+                                                <svg class="icon icon-mail ">
+                                                    <use xlink:href="img/svg/sprite.svg#mail"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <a href="mailto:info@freshmed.com.ua" class="text-with-icon__text">info@freshmed.com.ua</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-header__col">
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col">
+                                                <svg class="icon icon-clock ">
+                                                    <use xlink:href="img/svg/sprite.svg#clock"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <span class="text-with-icon__text">пн-пт 8.00 - 19.00</span>
+                                                <span class="text-with-icon__text">сб 9.00 - 17.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-header__col">
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col">
+                                                <svg class="icon icon-phone ">
+                                                    <use xlink:href="img/svg/sprite.svg#phone"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <a href="tel:+38 063 500 88 22" class="text-with-icon__text">+38 063 500 88 22 </a>
+                                                <a href="tel:+38 095 500 88 22" class="text-with-icon__text">+38 095 500 88 22</a>
+                                                <a href="tel:+38 097 500 88 22" class="text-with-icon__text">+38 097 500 88 22</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#appointment" class="top-header__button btn btn--primary js-smoothscroll-btn">Запис онлайн</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bot">
+                    <div class="container">
+                        <div class="bot-header">
+                            <div class="burger">
+                                <span></span>
+                            </div>
+                            <div class="bot-header__menu menu-bot-header">
+                                <span class="menu-bot-header__close js-burger-close"></span>
+                                <ul class="menu-bot-header__list">
+                                    <li class="menu-bot-header__item">
+                                        <a href="" class="menu-bot-header__link menu-bot-header__link--arrow  js-dropdown-menu-btn">Про нас</a>
+                                        <ul class="dropdown-menu js-dropdown-menu">
+                                            <li class="dropdown-menu__item">
+                                                <a href="#" class="dropdown-menu__link">Історія</a>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <a href="#" class="dropdown-menu__link">Вакансії</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link is-current">Послуги</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Прайс</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Лікарі</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Акції</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Контакти</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="bot-header__login login-bot-header">
+                                <svg class="icon icon-human ">
+                                    <use xlink:href="img/svg/sprite.svg#human"></use>
+                                </svg>
+                                <span class="login-bot-header__text">Особистий кабінет</span>
+                            </a>
+                            <div class="bot-header__language-selector">
+                                <div class="selector">
+                                    <input type="text" class="selector__input">
+                                    <button class="selector__current">
+                                        <span>UA</span>
+                                    </button>
+                                    <div class="selector__options">
+
+                                        <button data-value="UA" class="selector__option">UA</button>
+
+                                        <button data-value="EN" class="selector__option">EN</button>
+
+                                        <button data-value="RU" class="selector__option">RU</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-banner-slider">
+                <div class="banner-slider">
+                    <div class="banner-slider__container">
+                        <div class="banner-slider__wrapper swiper-wrapper">
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/1.jpg" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/2.jpg" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/3.jpg" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/6.png" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-slider__pagination"></div>
+                    </div>
+                    <span class="banner-slider__arrow banner-slider__arrow--prev">
+            <svg class="icon icon-slider-arrow ">
+    <use xlink:href="img/svg/sprite.svg#slider-arrow"></use>
+</svg>
+        </span>
+                    <span class="banner-slider__arrow banner-slider__arrow--next">
+            <svg class="icon icon-slider-arrow ">
+    <use xlink:href="img/svg/sprite.svg#slider-arrow"></use>
+</svg>
+        </span>
+                </div>
+            </div>
+            <div class="s-breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs">
+
+
+                        <li class="breadcrumbs__item">
+                            <a href="" class="breadcrumbs__link">Головна</a>
+                        </li>
+
+
+
+
+
+                        <li class="breadcrumbs__item">Лікарі</li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="s-doctors-page">
+                <div class="container">
+                    <div class="doctors-page">
+                        <div class="doctors-page__header">
+                            <div class="title-section  title-section--default">
+
+                                <span class="title-section__title">Лікарі</span>
+
+                            </div>
+                        </div>
+                        <div class="doctors-page__body">
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/6.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Душейко Володимир  Петрович</span>
+                                <span class="doctor-card__profession">гінеколог, лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж-роботи: 33 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/2.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Александрова Ксенія Олександрівна</span>
+                                <span class="doctor-card__profession">ендокринолог</span>
+                                <span class="doctor-card__experience">стаж роботи: 26 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/1.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Акімов Олександр Олександрович</span>
+                                <span class="doctor-card__profession">кардіолог лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж-роботи: 28 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/13.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Сеньків Людмила Миколаївна</span>
+                                <span class="doctor-card__profession">невролог, лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 12 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/10.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Печерський Олег Іванович</span>
+                                <span class="doctor-card__profession">ортопед-травматолог, лікар 1 категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 22 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/12.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Рижова Наталія Олександрівна</span>
+                                <span class="doctor-card__profession">невролог лікар вищої категорї</span>
+                                <span class="doctor-card__experience">стаж роботи: 40 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/4.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Буц Оксана Георгієвна</span>
+                                <span class="doctor-card__profession">фізіотерапевт, невролог лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 10 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/15.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Фокіна Діана Олегівна</span>
+                                <span class="doctor-card__profession">дерматолог-косметолог</span>
+                                <span class="doctor-card__experience">стаж роботи: 2 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/7.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Єлісєєва Олена Борисівна</span>
+                                <span class="doctor-card__profession">фізіотерапевт, невролог лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 23 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/14.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Федорова Олена Петрівна</span>
+                                <span class="doctor-card__profession">терапевт, кандидат мед. наук, лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 24 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/11.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Поліщук Ольга Юріївна</span>
+                                <span class="doctor-card__profession">гінеколог, лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 26 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/18.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Шейченко Тетяна Володимирівна</span>
+                                <span class="doctor-card__profession">кардіолог, лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 23 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/5.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Герасютенко Тамара Дмитрівна</span>
+                                <span class="doctor-card__profession">лікар УЗІ, лікар вищої категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 47  роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/16.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Цис Олексій Вікторович</span>
+                                <span class="doctor-card__profession">гастроентеролог, дієтолог</span>
+                                <span class="doctor-card__experience">стаж роботи: 4 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/9.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Мухо Ліана Михайлівна</span>
+                                <span class="doctor-card__profession">лікар УЗІ, лікар 1 категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 9 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/17.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Черниш Олег Сергійович</span>
+                                <span class="doctor-card__profession">косметолог</span>
+                                <span class="doctor-card__experience">стаж роботи: 1,5 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/8.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Мочалова Вікторія Юріївна</span>
+                                <span class="doctor-card__profession">психолог, лікар 2 категорії</span>
+                                <span class="doctor-card__experience">стаж роботи: 24 роки</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-card__photo">
+                                    <img src="img/doctors/3.jpg" alt="Фото доктора" />
+                                </div>
+                                <span class="doctor-card__name">Бєлих Сергій Олександрович</span>
+                                <span class="doctor-card__profession">кваліфікований масажист</span>
+                                <span class="doctor-card__experience">стаж роботи: 7 років</span>
+
+                                <div class="doctor-card__footer">
+                                    <a href="#" class="doctor-card__button btn btn--primary">Запис онлайн</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        <div class="s-footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__col info-col-footer">
+                        <div class="info-col-footer__row">
+                            <div class="info-col-footer__logo">
+                                <img src="img/logo-w.png" alt="Лого" />
+                            </div>
+                        </div>
+                        <div class="info-col-footer__row info-col-footer__row--info">
+                            <div class="info-col-footer__col info-col-footer__col--list">
+                                <ul class="info-col-footer__list">
+                                    <li><a href="" class="info-col-footer__link">Про нас</a></li>
+                                    <li><a href="" class="info-col-footer__link">Послуги</a></li>
+                                    <li><a href="" class="info-col-footer__link">Прайс</a></li>
+                                    <li><a href="" class="info-col-footer__link">Лікарі</a></li>
+                                    <li><a href="" class="info-col-footer__link">Програми</a></li>
+                                    <li><a href="" class="info-col-footer__link">Акції</a></li>
+                                    <li><a href="" class="info-col-footer__link">Контакти</a></li>
+                                </ul>
+                            </div>
+                            <div class="info-col-footer__col">
+                                <div class="info-col-footer__contacts">
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-mail-w ">
+                                                <use xlink:href="img/svg/sprite.svg#mail-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <a href="mailto:info@freshmed.com.ua" class="text-with-icon__text">info@freshmed.com.ua</a>
+                                        </div>
+                                    </div>
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-point-w ">
+                                                <use xlink:href="img/svg/sprite.svg#point-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <span class="text-with-icon__text">м. Запоріжжя, пр-т Соборний, 94</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-clock-w ">
+                                                <use xlink:href="img/svg/sprite.svg#clock-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <span class="text-with-icon__text">пн-пт 8.00 - 19.00</span>
+                                            <span class="text-with-icon__text">сб 9.00 - 17.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-phone-w ">
+                                                <use xlink:href="img/svg/sprite.svg#phone-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <a href="tel:+38 063 500 88 22" class="text-with-icon__text">+38 063 500 88 22</a>
+                                            <a href="tel:+38 095 500 88 22" class="text-with-icon__text">+38 095 500 88 22</a>
+                                            <a href="tel:+38 097 500 88 22" class="text-with-icon__text">+38 097 500 88 22</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-col-footer__socials">
+                                    <a href="">
+                                        <svg class="icon icon-fb ">
+                                            <use xlink:href="img/svg/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg class="icon icon-inst ">
+                                            <use xlink:href="img/svg/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col map-col-footer">
+                        <div class="map-col-footer__wrapper">
+                            <div id="yamap-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

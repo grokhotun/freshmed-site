@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="Описание">
+    <!-- Включить если нужна поддержка ie11 -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7289e9da-b810-4e99-973b-adc7197fefe4&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Акції</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__body">Прелоадер</div>
+    </div>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <div class="s-header">
+            <div class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="top-header">
+                            <div class="top-header__col top-header__col--first">
+                                <a href="links.html" class="top-header__logo">
+                                    <div class="top-header__logo-img">
+                                        <img src="img/logo.png" alt="Лого" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="top-header__col top-header__col--second">
+                                <div class="top-header__contact-info contact-info-header">
+                                    <div class="contact-info-header__col">
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col text-with-icon__col--icon">
+                                                <svg class="icon icon-point ">
+                                                    <use xlink:href="img/svg/sprite.svg#point"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <span class="text-with-icon__text">м. Запоріжжя, пр-т Соборний, 94</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col text-with-icon__col--icon">
+                                                <svg class="icon icon-mail ">
+                                                    <use xlink:href="img/svg/sprite.svg#mail"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <a href="mailto:info@freshmed.com.ua" class="text-with-icon__text">info@freshmed.com.ua</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-header__col">
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col">
+                                                <svg class="icon icon-clock ">
+                                                    <use xlink:href="img/svg/sprite.svg#clock"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <span class="text-with-icon__text">пн-пт 8.00 - 19.00</span>
+                                                <span class="text-with-icon__text">сб 9.00 - 17.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-header__col">
+                                        <div class="text-with-icon">
+                                            <div class="text-with-icon__col">
+                                                <svg class="icon icon-phone ">
+                                                    <use xlink:href="img/svg/sprite.svg#phone"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-with-icon__col">
+                                                <a href="tel:+38 063 500 88 22" class="text-with-icon__text">+38 063 500 88 22 </a>
+                                                <a href="tel:+38 095 500 88 22" class="text-with-icon__text">+38 095 500 88 22</a>
+                                                <a href="tel:+38 097 500 88 22" class="text-with-icon__text">+38 097 500 88 22</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#appointment" class="top-header__button btn btn--primary js-smoothscroll-btn">Запис онлайн</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bot">
+                    <div class="container">
+                        <div class="bot-header">
+                            <div class="burger">
+                                <span></span>
+                            </div>
+                            <div class="bot-header__menu menu-bot-header">
+                                <span class="menu-bot-header__close js-burger-close"></span>
+                                <ul class="menu-bot-header__list">
+                                    <li class="menu-bot-header__item">
+                                        <a href="" class="menu-bot-header__link menu-bot-header__link--arrow  js-dropdown-menu-btn">Про нас</a>
+                                        <ul class="dropdown-menu js-dropdown-menu">
+                                            <li class="dropdown-menu__item">
+                                                <a href="#" class="dropdown-menu__link">Історія</a>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <a href="#" class="dropdown-menu__link">Вакансії</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link is-current">Послуги</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Прайс</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Лікарі</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Акції</a></li>
+                                    <li class="menu-bot-header__item"><a href="" class="menu-bot-header__link">Контакти</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="bot-header__login login-bot-header">
+                                <svg class="icon icon-human ">
+                                    <use xlink:href="img/svg/sprite.svg#human"></use>
+                                </svg>
+                                <span class="login-bot-header__text">Особистий кабінет</span>
+                            </a>
+                            <div class="bot-header__language-selector">
+                                <div class="selector">
+                                    <input type="text" class="selector__input">
+                                    <button class="selector__current">
+                                        <span>UA</span>
+                                    </button>
+                                    <div class="selector__options">
+
+                                        <button data-value="UA" class="selector__option">UA</button>
+
+                                        <button data-value="EN" class="selector__option">EN</button>
+
+                                        <button data-value="RU" class="selector__option">RU</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-banner-slider">
+                <div class="banner-slider">
+                    <div class="banner-slider__container">
+                        <div class="banner-slider__wrapper swiper-wrapper">
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/1.jpg" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/2.jpg" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/3.jpg" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider__slide swiper-slide">
+                                <div class="banner-slider__bg ibg">
+                                    <img src="img/banners/6.png" alt="Фото врача" />
+                                </div>
+                                <div class="container">
+                                    <div class="banner-slider__content">
+                                        <span class="banner-slider__title">Свіжі рішення для Вашого здоров’я</span>
+                                        <span class="banner-slider__subtitle">З першого дня відкриття команда медичного центру FreshMed
+                                прагне стоврити для вас найкращий медичний сервіс у місті.</span>
+                                        <a href="#" class="banner-slider__button btn btn--primary">Записатися онлайн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-slider__pagination"></div>
+                    </div>
+                    <span class="banner-slider__arrow banner-slider__arrow--prev">
+            <svg class="icon icon-slider-arrow ">
+    <use xlink:href="img/svg/sprite.svg#slider-arrow"></use>
+</svg>
+        </span>
+                    <span class="banner-slider__arrow banner-slider__arrow--next">
+            <svg class="icon icon-slider-arrow ">
+    <use xlink:href="img/svg/sprite.svg#slider-arrow"></use>
+</svg>
+        </span>
+                </div>
+            </div>
+            <div class="s-breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs">
+
+
+                        <li class="breadcrumbs__item">
+                            <a href="" class="breadcrumbs__link">Головна</a>
+                        </li>
+
+
+
+
+
+                        <li class="breadcrumbs__item">Акції</li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="s-actions-page">
+                <div class="container">
+                    <div class="actions-page">
+                        <div class="actions-page__header">
+                            <div class="title-section  title-section--default">
+
+                                <span class="title-section__title">Акції</span>
+
+                            </div>
+                        </div>
+                        <div class="actions-page__body">
+                            <div class="actions-card">
+                                <div class="actions-card__col actions-card__col--photo">
+                                    <div class="actions-card__image">
+                                        <img src="img/actions-page/1.png" alt="Карточка акции" />
+                                    </div>
+                                </div>
+                                <div class="actions-card__col actions-card__col--info">
+                                    <div class="actions-card__content">
+                                        <span class="actions-card__title">Час не відкладати свій візит до гінеколога!</span>
+                                        <p class="actions-card__text">
+                                            У медичному центрі FreshMed діє вигідна пропозиція на перший прийом у гінеколога. Разом із консультацією ви маєте змогу зробити обстеження мазку та відеокальпоскопію в подарунок. Загальна вартість такого візиту буде становити 500 грн.
+                                        </p>
+                                    </div>
+                                    <span class="actions-card__date">Акція діє з 1.05.2020 до 01.09.2020 року.</span>
+                                </div>
+                            </div>
+                            <div class="actions-card">
+                                <div class="actions-card__col actions-card__col--photo">
+                                    <div class="actions-card__image">
+                                        <img src="img/actions-page/2.png" alt="Карточка акции" />
+                                    </div>
+                                </div>
+                                <div class="actions-card__col actions-card__col--info">
+                                    <div class="actions-card__content">
+                                        <span class="actions-card__title">Перший прийом зі знижкою!</span>
+                                        <p class="actions-card__text">
+                                            Медичний центр FreshMed вже відкрив свої двері для пацієнтів. З нагоди нашого відкриття даруємо знижку на перший прийом. Лище до 31 травня кожен пацієнт отримує знижку 15% на перший прийом у буль якого лікаря медичного центру. Щоб потрапити на прийом, ви можете записатися до лікаря <a href='#'>онлайн</a> або замовити <a href=''>callback</a> і ми перетелефонуємо вам через 30 секунд.
+                                        </p>
+                                    </div>
+                                    <span class="actions-card__date">Акція діє з 15.05.2020 до 31.05.2020 року.</span>
+                                </div>
+                            </div>
+                            <div class="actions-card">
+                                <div class="actions-card__col actions-card__col--photo">
+                                    <div class="actions-card__image">
+                                        <img src="img/actions-page/3.png" alt="Карточка акции" />
+                                    </div>
+                                </div>
+                                <div class="actions-card__col actions-card__col--info">
+                                    <div class="actions-card__content">
+                                        <span class="actions-card__title">Пакет “Оздоровлення”</span>
+                                        <p class="actions-card__text">
+                                            Саме зараз у медичному центрі “FreshMed” ви маєте змогу придбати 10 сеансів масажів тіла за ціною 8. Також, ви отримуєте кожен п’ятий сеанс масажу у подарунок. Записуйтесь <a href=''>онлайн</a> або замовляйте <a href=''>callback</a> і ми перетелефонуємо вам через 30 секунд.
+                                        </p>
+                                    </div>
+                                    <span class="actions-card__date">Акція діє з 1.05.2020 до 31.10.2020 року.</span>
+                                </div>
+                            </div>
+                            <div class="actions-card">
+                                <div class="actions-card__col actions-card__col--photo">
+                                    <div class="actions-card__image">
+                                        <img src="img/actions-page/4.png" alt="Карточка акции" />
+                                    </div>
+                                </div>
+                                <div class="actions-card__col actions-card__col--info">
+                                    <div class="actions-card__content">
+                                        <span class="actions-card__title">Перевір серце!</span>
+                                        <p class="actions-card__text">
+                                            Дуже важливо перевіряти своє серце вчасно. В медичному центрі FreshMed вартість першого візиту до кардіолога становить 350 гривень. В цю вартість вже входить кардіограма та її розшифрування. Записуйтесь онлайн або замовляйте call back і ми перетелефонуємо вам через 30 секунд.
+                                        </p>
+                                    </div>
+                                    <span class="actions-card__date">Акція діє з 1.05.2020 до 01.09.2020 року. </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-page__footer">
+                            <div class="pagination">
+                                <a href="#" class="pagination__arrow pagination__arrow--prev is-disabled">
+                                    <svg class="icon icon-pagination-arrow ">
+                                        <use xlink:href="img/svg/sprite.svg#pagination-arrow"></use>
+                                    </svg>
+                                    <span>Попередня</span>
+                                </a>
+                                <ul class="pagination__list js-pagination">
+
+
+                                    <li class="pagination__item"><a href="" class="pagination__link is-active">1</a></li>
+
+
+
+
+
+                                    <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+
+
+
+
+                                    <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+
+
+
+
+                                    <li class="pagination__item"><a href="" class="pagination__link">4</a></li>
+
+
+
+
+                                    <li class="pagination__item"><a href="" class="pagination__link">5</a></li>
+
+
+                                </ul>
+                                <a href="#" class="pagination__arrow pagination__arrow--next">
+                                    <span>Наступна</span>
+                                    <svg class="icon icon-pagination-arrow ">
+                                        <use xlink:href="img/svg/sprite.svg#pagination-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="appointment" class="s-appointment">
+                <div class="s-appointment__bg ibg">
+                    <img src="img/backgrounds/2.png" alt="Задний фон" />
+                </div>
+                <div class="container">
+                    <div class="appointment">
+                        <form action="" class="form">
+                            <div class="appointment__form">
+                                <div class="appointment__header">
+                                    <span class="appointment__title">Запис до лікаря онлайн</span>
+                                    <span class="appointment__subtitle">Поля, відмічені зірочкою, обов’язкові для заповнення </span>
+                                </div>
+                                <div class="appointment__body">
+                                    <div class="form-group">
+                                        <span class="form-group__text">Введіть Ім’я та фамілію*</span>
+                                        <input required data-pristine-required-message="Введіть ваше ім'я" placeholder="Ірина Сергієнко" type="text" class="form-group__input">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-group__text">Введіть телефон*</span>
+                                        <input required data-pristine-required-message="Введіть ваш телефон" placeholder="+380 (67) 345-18-14" type="text" class="form-group__input js-mask-phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-group__text">Коментар</span>
+                                        <textarea placeholder="Ваш комментар" name="" id="" cols="30" rows="10" class="form-group__textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="appointment__footer">
+                                    <button class="appointment__button btn btn--primary">Записатися онлайн</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        <div class="s-footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__col info-col-footer">
+                        <div class="info-col-footer__row">
+                            <div class="info-col-footer__logo">
+                                <img src="img/logo-w.png" alt="Лого" />
+                            </div>
+                        </div>
+                        <div class="info-col-footer__row info-col-footer__row--info">
+                            <div class="info-col-footer__col info-col-footer__col--list">
+                                <ul class="info-col-footer__list">
+                                    <li><a href="" class="info-col-footer__link">Про нас</a></li>
+                                    <li><a href="" class="info-col-footer__link">Послуги</a></li>
+                                    <li><a href="" class="info-col-footer__link">Прайс</a></li>
+                                    <li><a href="" class="info-col-footer__link">Лікарі</a></li>
+                                    <li><a href="" class="info-col-footer__link">Програми</a></li>
+                                    <li><a href="" class="info-col-footer__link">Акції</a></li>
+                                    <li><a href="" class="info-col-footer__link">Контакти</a></li>
+                                </ul>
+                            </div>
+                            <div class="info-col-footer__col">
+                                <div class="info-col-footer__contacts">
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-mail-w ">
+                                                <use xlink:href="img/svg/sprite.svg#mail-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <a href="mailto:info@freshmed.com.ua" class="text-with-icon__text">info@freshmed.com.ua</a>
+                                        </div>
+                                    </div>
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-point-w ">
+                                                <use xlink:href="img/svg/sprite.svg#point-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <span class="text-with-icon__text">м. Запоріжжя, пр-т Соборний, 94</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-clock-w ">
+                                                <use xlink:href="img/svg/sprite.svg#clock-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <span class="text-with-icon__text">пн-пт 8.00 - 19.00</span>
+                                            <span class="text-with-icon__text">сб 9.00 - 17.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-with-icon text-with-icon--white">
+                                        <div class="text-with-icon__col text-with-icon__col--icon">
+                                            <svg class="icon icon-phone-w ">
+                                                <use xlink:href="img/svg/sprite.svg#phone-w"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-with-icon__col">
+                                            <a href="tel:+38 063 500 88 22" class="text-with-icon__text">+38 063 500 88 22</a>
+                                            <a href="tel:+38 095 500 88 22" class="text-with-icon__text">+38 095 500 88 22</a>
+                                            <a href="tel:+38 097 500 88 22" class="text-with-icon__text">+38 097 500 88 22</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-col-footer__socials">
+                                    <a href="">
+                                        <svg class="icon icon-fb ">
+                                            <use xlink:href="img/svg/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg class="icon icon-inst ">
+                                            <use xlink:href="img/svg/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col map-col-footer">
+                        <div class="map-col-footer__wrapper">
+                            <div id="yamap-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
